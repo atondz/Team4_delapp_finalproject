@@ -1,0 +1,87 @@
+/* Đặt kiểu tổng thể cho thanh navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    background-color: #fff;
+    
+  }
+  
+  /* Logo */
+  .navbar .logo {
+    width: 150px;
+    height: auto;
+  }
+  
+  /* Menu chính */
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    color: #49557e;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar-menu li  {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s;
+    cursor: pointer;
+  }
+  
+  .navbar-menu li :hover {
+    color: #007BFF;
+  }
+  
+  /* Khu vực bên phải (search, giỏ hàng, nút đăng nhập) */
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .navbar-right img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  
+  /* Search và Basket icon */
+  .navbar-search-icon {
+    position: relative;
+  }
+  
+  /* Dot hiển thị số lượng trong giỏ hàng */
+  .navbar-search-icon .dot {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 10px;
+    height: 10px;
+    background-color: tomato;
+    border-radius: 50%;
+  }
+  
+  /* Nút sign in */
+  button {
+    padding: 10px 30px;
+    background: transparent;
+    font-size: 16px;
+    color: #49557e;
+    border: 1px solid tomato;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #fff4f2 ;
+  }
+.navbar .active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid #49557e;
+}
